@@ -14,7 +14,7 @@ st.set_page_config(
 df = pd.read_csv('Data_Set.csv')
 
 # OpenAI client
-client = OpenAI(api_key="YOUR_API_KEY_HERE")
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # Dashboard title
 st.title('📊 HR Attrition Analytics Dashboard')
